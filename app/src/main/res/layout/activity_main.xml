@@ -1,0 +1,390 @@
+<ScrollView
+    android:id="@+id/activity_main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KALKULATOR"
+            android:textSize="28dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000085"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bangun Ruang 3D"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#51c0d9"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balok"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/et_panjangBalok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Panjang"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/et_lebarBalok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Lebar"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/et_tinggiBalok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Tinggi"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prisma Segitiga Siku-Siku"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/et_alasSPrisma"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Alas Segitiga"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/et_tinggiSPrisma"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Tinggi Segitiga"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/et_tinggiPrisma"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Tinggi Prisma"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bola, Kerucut, dan Tabung"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/et_jarijari"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Jari - Jari Lingkaran"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/et_tinggiKerucut"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Input Tinggi Kerucut/Tabung"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/btn_hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitung Hasil"
+            android:background="#00c707"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil Perhitungan Kalkulator"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luas Permukaan Bangun 3D"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#b700ff"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balok"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_luasBalok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prisma Segitiga"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_luasPrisma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bola"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_luasBola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kerucut"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        />
+
+        <TextView
+            android:id="@+id/tv_luasKerucut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tabung"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_luasTabung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume Bangun 3D"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#b700ff"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balok"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_volumeBalok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prisma Segitiga"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_volumePrisma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bola"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_volumeBola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kerucut"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        />
+
+        <TextView
+            android:id="@+id/tv_volumeKerucut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tabung"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_volumeTabung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+</ScrollView>
